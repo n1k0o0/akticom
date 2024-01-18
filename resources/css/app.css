@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+input:focus,select:focus {
+    outline: 0 !important;
+    outline-offset: 0 !important;
+    box-shadow: none !important;
+}
+
+textarea:focus {
+    outline: 0 !important;
+    outline-offset: 0 !important;
+}
+
+td.actions > div {
+    display: flex;
+    gap: 5px;
+}
