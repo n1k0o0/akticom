@@ -44,6 +44,8 @@ class StickerController extends Controller
      */
     public function upload(UploadCSVStickerRequest $request): RedirectResponse
     {
+        // Логика должно быть в сервисе, а не в контроллерах
+
         $file = $request->file('file');
 
         $fileContents = str_replace('"', '', file($file->getPathname()));
